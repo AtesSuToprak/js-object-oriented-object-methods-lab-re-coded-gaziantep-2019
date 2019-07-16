@@ -2,7 +2,7 @@
    this.name = name
    this.homeState = homeState
    this.training = training
-   this.veto = function() {console.log("No, I must disagree")};
+   this.veto = function() {return"No, I must disagree"};
    this.approve = function() {console.log("You can do that!")};
    this.doCharity = function() {console.log("I like to help people")}
    this.releasePressStatement = function() {console.log("You will see great things from Scuber")};
@@ -10,14 +10,6 @@
    
  } 
     let polishedBoardMember = new BoardMember("Mr.Polished", "New York", "Law");
-    polishedBoardMember.veto();
     
-    polishedBoardMember.approve();
-    
-    polishedBoardMember.doCharity();
-    
-    polishedBoardMember.releasePressStatement();
-    
-    polishedBoardMember.sayHi();
  
  
